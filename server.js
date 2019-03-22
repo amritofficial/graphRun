@@ -24,3 +24,10 @@ app.use('/graphql', express_graphql({
     graphiql: true
 }));
 
+app.listen(3000, (err) => {
+    if (err) {
+        return "Error";
+    }
+    console.log("Server Running");
+});
+
